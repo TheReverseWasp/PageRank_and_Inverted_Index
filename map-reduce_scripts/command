@@ -1,0 +1,19 @@
+hadoop jar /usr/lib/hadoop-3.2.1/share/hadoop/tools/lib/hadoop-streaming-3.2.1.jar \
+-file map1.py    -mapper map1.py \
+-file reduce1.py   -reducer reduce1.py \
+-input filenames.txt -output output1
+
+hadoop jar /usr/lib/hadoop-3.2.1/share/hadoop/tools/lib/hadoop-streaming-3.2.1.jar \
+-file map2.py    -mapper map2.py \
+-file reduce2.py   -reducer reduce2.py \
+-input filenames.txt -output output2
+
+hadoop jar /usr/lib/hadoop-3.2.1/share/hadoop/tools/lib/hadoop-streaming-3.2.1.jar \
+-file ma32.py    -mapper map3.py \
+-file reduce3.py   -reducer reduce3.py \
+-input filenames.txt -output output3
+
+hadoop jar /usr/lib/hadoop-3.2.1/share/hadoop/tools/lib/hadoop-streaming-3.2.1.jar \
+-file map4.py    -mapper map4.py \
+-file reduce4.py   -reducer reduce4.py \
+-input dicfile.txt -output output4
