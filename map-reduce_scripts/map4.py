@@ -26,5 +26,5 @@ for k in sys.stdin:
                         key_dic[f] += 1
                     if line[1] == k:
                         key_dic[f] += 1
-    with open("../Resultados/map4/" + k + ".json") as kjson:
+    with open("../Resultados/map4/" + k + ".json", "w") as kjson:
         json.dump(key_dic, kjson)

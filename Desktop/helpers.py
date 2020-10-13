@@ -11,10 +11,10 @@ def searchWord(word):
         with open("../Resultados/map4/" + word + ".json", "r") as wordjson:
             wdic = json.load(wordjson)
     except:
-        retunr ([["0", "0"]])
+        return ([["0", "0"]])
     for k, v in wdic.items():
         my_pr[k] *= v**2
-    for k, v in my_pr:
+    for k, v in my_pr.items():
         answer.append([k, v])
     answer.sort(key = lambda x: x[1])
     answer.reverse()

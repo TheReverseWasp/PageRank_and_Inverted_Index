@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def main():
-    return 0
+    a = 5
 
 if __name__ == "__main__":
     main()

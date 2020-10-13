@@ -17,6 +17,7 @@ def main():
         actual += 1
         key_dic = {}
         for f in filenames:
+            print(" [+] Currently file " + f)
             key_dic[f] = 0
             with open("../Datos/" + f, "r") as actual_file:
                 while True:
@@ -30,7 +31,7 @@ def main():
                             key_dic[f] += 1
                         if line[1] == k:
                             key_dic[f] += 1
-        with open("../Resultados/Content/words/" + k + ".json") as kjson:
+        with open("../Resultados/Content/words/" + k + ".json", "w") as kjson:
             json.dump(key_dic, kjson)
 
 if __name__ == "__main__":
