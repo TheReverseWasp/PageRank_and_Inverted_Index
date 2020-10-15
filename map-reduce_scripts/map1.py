@@ -4,7 +4,6 @@ import json
 import re
 import sys
 
-
 r = "[a-z]+"
 for k in sys.stdin:
     k = k[:-1]

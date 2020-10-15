@@ -17,3 +17,8 @@ hadoop jar /usr/lib/hadoop-3.2.1/share/hadoop/tools/lib/hadoop-streaming-3.2.1.j
 -file map4.py    -mapper map4.py \
 -file reduce4.py   -reducer reduce4.py \
 -input dicfile.txt -output output4
+
+hadoop jar /usr/lib/hadoop-3.2.1/share/hadoop/tools/lib/hadoop-streaming-3.2.1.jar \
+-file map5.py    -mapper map5.py \
+-file reduce5.py   -reducer reduce5.py \
+-input filenames.txt -output output5

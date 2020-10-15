@@ -8,7 +8,7 @@ def searchWord(word):
     with open("../Resultados/PageRank.json", "r") as pr:
         my_pr = json.load(pr)
     try:
-        with open("../Resultados/map4/" + word + ".json", "r") as wordjson:
+        with open("../Resultados/reduce5/" + word + ".json", "r") as wordjson:
             wdic = json.load(wordjson)
     except:
         return ([["0", "0"]])
